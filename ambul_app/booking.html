@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Ambulance</title>
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <h2>Book an Ambulance</h2>
+    <label>Pickup Location:</label>
+    <select id="pickup">
+        <option value="Vikas Nagar">Vikas Nagar</option>
+        <option value="Tapovanam">Tapovanam</option>
+        <option value="Atmakur">Atmakur</option>
+    </select>
+    <br>
+    <label>Drop Location:</label>
+    <select id="drop">
+        <option value="Anantapur">Anantapur</option>
+        <option value="Dharmavaram">Dharmavaram</option>
+        <option value="Hindupur">Hindupur</option>
+    </select>
+    <br>
+    <label>Patient Condition:</label>
+    <input type="text" id="condition" placeholder="Condition" />
+    <button onclick="bookAmbulance()">Book Ambulance</button>
+    <div id="bookingResult"></div>
+</body>
+</html>

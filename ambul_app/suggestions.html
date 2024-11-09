@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Suggestions</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Find Hospital Suggestions</h2>
+        
+        <label for="disease">Select Disease:</label>
+        <select id="disease">
+            <option value="Cardiology">Cardiology</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Oncology">Oncology</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <!-- Add more diseases as needed -->
+        </select>
+        
+        <button onclick="getSuggestions()">Get Suggestions</button>
+        
+        <div id="suggestionsResult" class="result"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
